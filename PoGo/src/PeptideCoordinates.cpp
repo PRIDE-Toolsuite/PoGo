@@ -19,7 +19,7 @@ std::vector<GenomeCoordinates> PeptideCoordinates::find_coordinates(std::pair<un
 	ptm_coordinates.Cterm = off3;
 	ptm_coordinates.Nterm = off3;
 
-	//equal range returns 2 iterators: the first and the last occurence of ptm_coordinates in the sorted multimap (m_coordinates)
+	//equal range returns 2 iterators: the first and the last occurrence of ptm_coordinates in the sorted multimap (m_coordinates)
 	std::pair<CoordinateMapType::iterator, CoordinateMapType::iterator> ptm_search_it = m_coordinates.equal_range(ptm_coordinates);
 
 	std::vector<GenomeCoordinates> ptm;

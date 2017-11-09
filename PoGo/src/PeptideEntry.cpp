@@ -110,7 +110,7 @@ std::ostream& PeptideEntry::to_gtf(const std::string& source, std::ostream& os, 
 
 std::ostream& PeptideEntry::to_bed(std::ostream& os, bool noptm, bool chrincluded) {
 	for (std::set<PeptideCoordinates*, peptidecoords_p_compare>::iterator it = m_pepcoordinates.begin(); it != m_pepcoordinates.end(); ++it) {
-		os << coordinates_to_bed_string((*it)->get_transcript_coordinates(), m_sequence);
+		os << coordinates_to_bed_string((*it)->get_transcript_coordinates(), m_sequence, chrincluded);
 		//std::cout << coordinates_to_bed_string((*it)->get_transcript_coordinates(), m_sequence) << std::endl;
 
 		std::stringstream exon_starts;

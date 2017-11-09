@@ -38,6 +38,9 @@ void ResultParser::read(std::string file, CoordinateWrapper& coordwrapper, Mappe
 				if (sig_PSMs > 0) {
 					//the matching will only use the amino acids.
 					iso_seq_without_ptms = make_iso_sequence(remove_ptms(peptide_string));
+					if(iso_seq_without_ptms.compare("FLQSSASVQNHEFLLVHHLQR") == 0){
+						std::cout << iso_seq_without_ptms << std::endl;
+					}
 
 					if (!coordwrapper.peptide_already_exists(iso_seq_without_ptms)) {
 						//the gene_id_map.find_peptide function will match the peptide.
