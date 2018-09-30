@@ -34,7 +34,7 @@ struct GENOME_MAPPER_GLOBALS {
 
 		//toggles wheter 1 in 5 mode is on. this mode only works with 
 		//two mismatches. if 1 in 5 mode is on, only one mismatch is 
-		//allowed in every 5 amino acids. (this only works if KmerLength == 5)
+		//allowthis only works if Kmered in every 5 amino acids. (Length == 5)
 		//can be toggled with the -mmmode switch.
 		static bool					ONE_IN_FIVE_MODE;
 	};

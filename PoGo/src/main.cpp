@@ -218,7 +218,7 @@ int main(int argc, char* argv[]) {
 
 		// Creating a post-fix for file name specifying mode of mapping using mismatches
 		std::string filename_mm_postfix = "";
-		if (GENOME_MAPPER_GLOBALS::PEPTIDE_MAPPER::ALLOWED_MISMATCHES > 0) {
+ 	if (GENOME_MAPPER_GLOBALS::PEPTIDE_MAPPER::ALLOWED_MISMATCHES > 0) {
 			std::stringstream ss;
 			ss << "_" << GENOME_MAPPER_GLOBALS::PEPTIDE_MAPPER::ALLOWED_MISMATCHES << "MM";
 
